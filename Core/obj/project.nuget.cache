@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0blu0xMR415I+XTiASXufaWXwoA58V1yWE3vhVjCxbPxhtzGbByj1+x8AhRa5kgUKjBAFvdkofLyMN1CanT3AQ==",
+  "dgSpecHash": "j6kHYiWNOwPJwkoWZvTPgg0a3C2sgHYpdeKNBrQmDl5AVI6dqFcBiOj9aeDol83NVvOE/DkP8BKnkihVaKmwXg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ASUS\\source\\repos\\MseBackendProject\\Core\\Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

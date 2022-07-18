@@ -1,9 +1,12 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
 using Entity.Concrete;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +26,8 @@ namespace Business.Concrete
 
         public IResult Add(Company company)
         {
+            ValidationTool.Validate(new CompanyValidator(), company);
+
             _companyDal.Add(company);
             return new SuccessResult(Messages.addedCompany);
         }

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "lccHUKTuPBq9ogrFPSJoIzIpjAbNzY55/fYdrISHBJ0bcXzjje1cB8Gw8z6CpZvXDR95XoyGeFmeczZdoiQFTw==",
+  "dgSpecHash": "kD9+N4hNO4aZWuDy6WJbP6IggZEF5psAoKcm1/vvqhDHAVfcO/i2SWPCPad33YirY9GM52ENrTUZOtJhscJAwQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ASUS\\source\\repos\\MseBackendProject\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.7\\microsoft.aspnetcore.authentication.jwtbearer.6.0.7.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
