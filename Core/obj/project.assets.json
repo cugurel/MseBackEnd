@@ -2,33 +2,16 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "Castle.Core/1.2.0": {
+      "Castle.Core/5.0.0": {
         "type": "package",
         "dependencies": {
-          "NLog": "1.0.0.505",
-          "log4net": "1.2.10"
+          "System.Diagnostics.EventLog": "6.0.0"
         },
         "compile": {
-          "lib/Castle.Core.dll": {},
-          "lib/Castle.Services.Logging.NLogIntegration.dll": {},
-          "lib/Castle.Services.Logging.log4netIntegration.dll": {}
+          "lib/net6.0/Castle.Core.dll": {}
         },
         "runtime": {
-          "lib/Castle.Core.dll": {},
-          "lib/Castle.Services.Logging.NLogIntegration.dll": {},
-          "lib/Castle.Services.Logging.log4netIntegration.dll": {}
-        }
-      },
-      "Castle.DynamicProxy/2.2.0": {
-        "type": "package",
-        "dependencies": {
-          "Castle.Core": "[1.2.0]"
-        },
-        "compile": {
-          "lib/Castle.DynamicProxy2.dll": {}
-        },
-        "runtime": {
-          "lib/Castle.DynamicProxy2.dll": {}
+          "lib/net6.0/Castle.Core.dll": {}
         }
       },
       "FluentValidation/11.1.0": {
@@ -38,15 +21,6 @@
         },
         "runtime": {
           "lib/net6.0/FluentValidation.dll": {}
-        }
-      },
-      "log4net/1.2.10": {
-        "type": "package",
-        "compile": {
-          "lib/2.0/log4net.dll": {}
-        },
-        "runtime": {
-          "lib/2.0/log4net.dll": {}
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -440,15 +414,6 @@
           }
         }
       },
-      "NLog/1.0.0.505": {
-        "type": "package",
-        "compile": {
-          "lib/NLog.dll": {}
-        },
-        "runtime": {
-          "lib/NLog.dll": {}
-        }
-      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -512,6 +477,28 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.Diagnostics.EventLog/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Diagnostics.EventLog.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/System.Diagnostics.EventLog.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          },
+          "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Drawing.Common/4.7.0": {
@@ -957,30 +944,28 @@
     }
   },
   "libraries": {
-    "Castle.Core/1.2.0": {
-      "sha512": "Nzf3go+P9ZReJOWX1FVAnd2eBcF7u1sjIll2KC80B2kTmJTJY/cqvJG6kK/x/dXrPh4zmdPatnnVWZ/nrKzEaw==",
+    "Castle.Core/5.0.0": {
+      "sha512": "edc8jjyXqzzy8jFdhs36FZdwmlDDTgqPb2Zy1Q5F/f2uAc88bu/VS/0Tpvgupmpl9zJOvOo5ZizVANb0ltN1NQ==",
       "type": "package",
-      "path": "castle.core/1.2.0",
+      "path": "castle.core/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "castle.core.1.2.0.nupkg.sha512",
+        "ASL - Apache Software Foundation License.txt",
+        "CHANGELOG.md",
+        "LICENSE",
+        "castle-logo.png",
+        "castle.core.5.0.0.nupkg.sha512",
         "castle.core.nuspec",
-        "lib/Castle.Core.dll",
-        "lib/Castle.Services.Logging.NLogIntegration.dll",
-        "lib/Castle.Services.Logging.log4netIntegration.dll"
-      ]
-    },
-    "Castle.DynamicProxy/2.2.0": {
-      "sha512": "3eiJiPYF7wK0CmHn47d56kbJLfvTGfLZ8D5G1dLLRbCo8h28gn6qkKTxFk/65FDz9zeUqWWmpZ3SAwhbpOr1sw==",
-      "type": "package",
-      "path": "castle.dynamicproxy/2.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "castle.dynamicproxy.2.2.0.nupkg.sha512",
-        "castle.dynamicproxy.nuspec",
-        "lib/Castle.DynamicProxy2.dll"
+        "lib/net462/Castle.Core.dll",
+        "lib/net462/Castle.Core.xml",
+        "lib/net6.0/Castle.Core.dll",
+        "lib/net6.0/Castle.Core.xml",
+        "lib/netstandard2.0/Castle.Core.dll",
+        "lib/netstandard2.0/Castle.Core.xml",
+        "lib/netstandard2.1/Castle.Core.dll",
+        "lib/netstandard2.1/Castle.Core.xml",
+        "readme.txt"
       ]
     },
     "FluentValidation/11.1.0": {
@@ -1002,23 +987,6 @@
         "lib/netstandard2.0/FluentValidation.xml",
         "lib/netstandard2.1/FluentValidation.dll",
         "lib/netstandard2.1/FluentValidation.xml"
-      ]
-    },
-    "log4net/1.2.10": {
-      "sha512": "yP7PCpxPt5cB9yiRAvCwyW5YRqXV4jM4tpVLnm/ls2nJt786l5srbSdm5xIEVMXz/kOYqLKP177Gyqey1wdP/A==",
-      "type": "package",
-      "path": "log4net/1.2.10",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/1.0/log4net.dll",
-        "lib/1.0/log4net.xml",
-        "lib/1.1/log4net.dll",
-        "lib/1.1/log4net.xml",
-        "lib/2.0/log4net.dll",
-        "lib/2.0/log4net.xml",
-        "log4net.1.2.10.nupkg.sha512",
-        "log4net.nuspec"
       ]
     },
     "Microsoft.CSharp/4.5.0": {
@@ -1733,18 +1701,6 @@
         "version.txt"
       ]
     },
-    "NLog/1.0.0.505": {
-      "sha512": "7dnEHYmlfAho9gbM0KvjcfSej419aevcYyDNFcQf6ALcj+ZEkns64ZAN1KOOQK0lL20WHWXbKML4aA088BENTg==",
-      "type": "package",
-      "path": "nlog/1.0.0.505",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/NLog.dll",
-        "nlog.1.0.0.505.nupkg.sha512",
-        "nlog.nuspec"
-      ]
-    },
     "System.Collections/4.3.0": {
       "sha512": "3Dcj85/TBdVpL5Zr+gEEBUuFe2icOnLalmEh9hfck1PTYbbyWuZgh4fmm2ysCLTrqLQw6t3TgTyJ+VLp+Qb+Lw==",
       "type": "package",
@@ -1949,6 +1905,37 @@
         "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.xml",
         "system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
         "system.diagnostics.diagnosticsource.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Diagnostics.EventLog/6.0.0": {
+      "sha512": "lcyUiXTsETK2ALsZrX+nWuHSIQeazhqPphLfaRxzdGaG93+0kELqpgEHtwWOlQe7+jSFnKwaCAgL4kjeZCQJnw==",
+      "type": "package",
+      "path": "system.diagnostics.eventlog/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Diagnostics.EventLog.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Diagnostics.EventLog.dll",
+        "lib/net461/System.Diagnostics.EventLog.xml",
+        "lib/net6.0/System.Diagnostics.EventLog.dll",
+        "lib/net6.0/System.Diagnostics.EventLog.xml",
+        "lib/netcoreapp3.1/System.Diagnostics.EventLog.dll",
+        "lib/netcoreapp3.1/System.Diagnostics.EventLog.xml",
+        "lib/netstandard2.0/System.Diagnostics.EventLog.dll",
+        "lib/netstandard2.0/System.Diagnostics.EventLog.xml",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.xml",
+        "system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+        "system.diagnostics.eventlog.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -3560,7 +3547,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Castle.DynamicProxy >= 2.2.0",
+      "Castle.Core >= 5.0.0",
       "Entity >= 1.0.0",
       "FluentValidation >= 11.1.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.7",
@@ -3569,23 +3556,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Cagri\\.nuget\\packages\\": {},
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Source\\Repos\\MseBackEnd\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\Cagri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\Core\\obj\\",
+      "projectPath": "C:\\Users\\ASUS\\Source\\Repos\\MseBackEnd\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ASUS\\Source\\Repos\\MseBackEnd\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Cagri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3600,8 +3587,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\Entity\\Entity.csproj"
+            "C:\\Users\\ASUS\\Source\\Repos\\MseBackEnd\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\Source\\Repos\\MseBackEnd\\Entity\\Entity.csproj"
             }
           }
         }
@@ -3616,9 +3603,9 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "Castle.DynamicProxy": {
+          "Castle.Core": {
             "target": "Package",
-            "version": "[2.2.0, )"
+            "version": "[5.0.0, )"
           },
           "FluentValidation": {
             "target": "Package",
@@ -3655,47 +3642,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Castle.Core 1.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Castle.Core",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Castle.DynamicProxy 2.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Castle.DynamicProxy",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'log4net 1.2.10' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "log4net",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'NLog 1.0.0.505' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "NLog",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }

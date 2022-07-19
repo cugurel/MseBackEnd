@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Transaction;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Hashing;
 using Core.Utilities.Results.Abstract;
@@ -52,6 +53,7 @@ namespace Business.Concrete
             return new SuccessDataResult<User>(userToCheck, Messages.successfullLogin);
         }
 
+        [TransactionScopeAspect]
         public IDataResult<User> Register(UserForRegister userForRegister, string password)
         {
 
@@ -72,7 +74,7 @@ namespace Business.Concrete
                 Name = userForRegister.Name
             };
 
-            ValidationTool.Validate(new UserValidator(), user);
+            
 
             _userService.Add(user);
             return new SuccessDataResult<User>(user, Messages.userRegistered);
