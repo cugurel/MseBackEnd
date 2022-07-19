@@ -658,6 +658,7 @@
       "Core/1.0.0": {
         "dependencies": {
           "Entity": "1.0.0",
+          "FluentValidation": "11.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "System.Linq.Expressions": "4.3.0"
