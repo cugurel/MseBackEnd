@@ -34,7 +34,7 @@ namespace Business.Concrete
         {
             var claims = _userService.GetClaims(user);
             var accessToken = _tokenHelper.CreateToken(user, claims);
-            return new SuccessDataResult<AccessToken>(accessToken);
+            return new SuccessDataResult<AccessToken>(accessToken, Messages.successfullLogin);
         }
 
         public IDataResult<User> Login(UserForLogin userForLogin)
@@ -56,9 +56,6 @@ namespace Business.Concrete
         [TransactionScopeAspect]
         public IDataResult<User> Register(UserForRegister userForRegister, string password)
         {
-
-            
-
             byte[] passwordHash, passwordSalt;
             HashingHelper.CreatePasswordHash(password, out passwordHash, out passwordSalt);
             var user = new User()

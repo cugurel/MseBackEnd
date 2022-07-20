@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P8iVt2EH6vI4AyfmNJp0VPHHHHkQPYM6XiOin0VRfm3XPO9bic32S29ejIxmVChxsX/GKrHPN3rxRF+shCDlOw==",
+  "dgSpecHash": "KTqluuz+3cVWvv89WPLrwJqN5usQG6AhkkrCMmDr9scRC/MbrJGmUmlqAWeXLQ/Lmnc7VfNzGcSkuVkwAj3QVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\Business\\Business.csproj",
+  "projectFilePath": "C:\\Users\\Cagri\\source\\repos\\MseBackEnd\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cagri\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\Cagri\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.1\\autofac.extras.dynamicproxy.6.0.1.nupkg.sha512",

@@ -3668,9 +3668,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\Cagri\\source\\repos\\MseBackEnd\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\Business\\Business.csproj",
+      "projectPath": "C:\\Users\\Cagri\\source\\repos\\MseBackEnd\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\Cagri\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\Business\\obj\\",
       "projectStyle": "PackageReference",
@@ -3693,11 +3693,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\Cagri\\source\\repos\\MseBackEnd\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Cagri\\source\\repos\\MseBackEnd\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\Entity\\Entity.csproj"
+            "C:\\Users\\Cagri\\source\\repos\\MseBackEnd\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\Cagri\\source\\repos\\MseBackEnd\\Entity\\Entity.csproj"
             }
           }
         }

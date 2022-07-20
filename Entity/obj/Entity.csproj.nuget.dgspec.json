@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\Entity\\Entity.csproj": {}
+    "C:\\Users\\Cagri\\source\\repos\\MseBackEnd\\Entity\\Entity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\Entity\\Entity.csproj": {
+    "C:\\Users\\Cagri\\source\\repos\\MseBackEnd\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\Cagri\\source\\repos\\MseBackEnd\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\Entity\\Entity.csproj",
+        "projectPath": "C:\\Users\\Cagri\\source\\repos\\MseBackEnd\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\Cagri\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Cagri\\Source\\Repos\\MseBackEnd\\Entity\\obj\\",
         "projectStyle": "PackageReference",
