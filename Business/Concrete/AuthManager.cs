@@ -71,8 +71,6 @@ namespace Business.Concrete
                 Name = userForRegister.Name
             };
 
-            
-
             _userService.Add(user);
             return new SuccessDataResult<User>(user, Messages.userRegistered);
         }

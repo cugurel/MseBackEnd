@@ -12,7 +12,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server = DESKTOP-BLVVFAE; Database = KobiProject; Integrated Security=true");
+            optionsBuilder.UseSqlServer("Server = LAPTOP-6RP07O6C\\MSSQLSERVER04; Database = KobiProject; Integrated Security=true");
         }
 
         public DbSet<Company> Companies { get; set; }

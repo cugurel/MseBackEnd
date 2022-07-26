@@ -32,11 +32,11 @@ namespace WebApi.Controllers
                 return Ok(result.Data);
             }
 
-            return BadRequest(registerResult.Message);
+            return Ok(registerResult.Message);
         }
 
         [HttpPost("login")]
-        public IActionResult Login(UserForLogin userForLogin)
+        public IActionResult Login(UserForLogin userForLogin) 
         {
             var userToLogin = _authService.Login(userForLogin);
             if (!userToLogin.Success)
