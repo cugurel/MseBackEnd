@@ -23,7 +23,7 @@ namespace Core.Aspects.Autofac.Transaction
                 finally
                 {
                     transactionScope.Dispose();
-                    throw new NotImplementedException();
+                    
                 }
             }
         }
