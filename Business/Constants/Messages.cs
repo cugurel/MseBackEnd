@@ -15,5 +15,11 @@ namespace Business.Constants
         public static string successfullLogin = "Giriş Başarılı";
         public static string userRegistered = "Kayıt Başarılı";
         public static string userAlreadyExist = "Kullanıcı zaten kayıtlı";
+        public static string AddedOperaionClaim = "Yeni yetki alanı eklendi";
+        public static string DeletedOperaionClaim = "Yetki alanı silindi";
+        public static string UpdatedOperaionClaim = "Yetki alanı güncellendi";
+        public static string AddedUserOperationClaim = "Kullanıcı yetki alanı eklendi";
+        public static string DeletedUserOperationClaim = "Kullanıcı yetki alanı silindi";
+        public static string UpdatedUserOperationClaim = "Kullanıcı yetki alanı güncellendi";
     }
 }
