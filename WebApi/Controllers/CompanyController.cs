@@ -39,5 +39,41 @@ namespace WebApi.Controllers
 
             return BadRequest(result.Message);
         }
+
+        [HttpPost("deletecompany")]
+        public IActionResult DeleteCompany(Company company)
+        {
+            var result = _companyService.Delete(company);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+
+            return BadRequest(result.Message);
+        }
+
+        [HttpPost("updatecompany")]
+        public IActionResult UpdateCompany(Company company)
+        {
+            var result = _companyService.Update(company);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+
+            return BadRequest(result.Message);
+        }
+
+        [HttpGet("getcompanybyid")]
+        public IActionResult GetCompany(int id)
+        {
+            var result = _companyService.GetById(id);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+
+            return BadRequest(result.Message);
+        }
     }
 }

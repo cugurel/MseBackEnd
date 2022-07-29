@@ -27,7 +27,7 @@ namespace Business.Concrete
             _companyDal = companyDal;
         }
 
-        [SecuredOperation("Company.Add")]
+        [SecuredOperation("Admin,Company.Add")]
         [ValidationAspect(typeof(CompanyValidator))]
         public IResult Add(Company company)
         {
@@ -35,11 +35,27 @@ namespace Business.Concrete
             return new SuccessResult(Messages.addedCompany);
         }
 
+        //[SecuredOperation("Company.Delete")]
+        public IResult Delete(Company company)
+        {
+            _companyDal.Delete(company);
+            return new SuccessResult(Messages.deletedCompany);
+        }
+
         public IDataResult<List<Company>> GetAll()
         {
             return new SuccessDataResult<List<Company>>(_companyDal.GetAll(),Messages.listedCompany);
         }
 
-     
+        public IDataResult<Company> GetById(int id)
+        {
+            return new SuccessDataResult<Company>(_companyDal.Get(x=>x.Id == id), Messages.listedCompany);
+        }
+
+        public IResult Update(Company company)
+        {
+            _companyDal.Update(company);
+            return new SuccessResult(Messages.updatedCompany);
+        }
     }
 }

@@ -21,5 +21,7 @@ namespace Business.Constants
         public static string AddedUserOperationClaim = "Kullanıcı yetki alanı eklendi";
         public static string DeletedUserOperationClaim = "Kullanıcı yetki alanı silindi";
         public static string UpdatedUserOperationClaim = "Kullanıcı yetki alanı güncellendi";
+        public static string deletedCompany = "Şirket silindi";
+        public static string updatedCompany = "Şirket güncellendi";
     }
 }
