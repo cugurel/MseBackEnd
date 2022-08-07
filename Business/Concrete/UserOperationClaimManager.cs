@@ -5,6 +5,7 @@ using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
 using Entity.Concrete;
+using Entity.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,6 +47,11 @@ namespace Business.Concrete
         public IDataResult<List<UserOperationClaim>> GetList(int userId)
         {
             return new SuccessDataResult<List<UserOperationClaim>>(_userOperationClaimDal.GetAll(p => p.UserId == userId));
+        }
+
+        public IDataResult<List<UserOperationClaimDto>> GetListDto(int userId)
+        {
+            return new SuccessDataResult<List<UserOperationClaimDto>>(_userOperationClaimDal.GetListDto(userId));
         }
 
         [SecuredOperation("Admin,UserOperationClaim.Update")]

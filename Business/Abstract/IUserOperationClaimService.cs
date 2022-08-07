@@ -1,5 +1,6 @@
 ﻿using Core.Utilities.Results.Abstract;
 using Entity.Concrete;
+using Entity.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +16,6 @@ namespace Business.Abstract
         IResult Delete(UserOperationClaim userOperationClaim);
         IDataResult<UserOperationClaim> GetById(int id);
         IDataResult<List<UserOperationClaim>> GetList(int userId);
+        IDataResult<List<UserOperationClaimDto>> GetListDto(int userId);
     }
 }

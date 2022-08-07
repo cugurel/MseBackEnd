@@ -75,5 +75,17 @@ namespace WebApi.Controllers
 
             return BadRequest(result.Message);
         }
+
+        [HttpGet("getListDto")]
+        public IActionResult GetListDto(int userId)
+        {
+            var result = _userOperationClaimService.GetListDto(userId);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+
+            return BadRequest(result.Message);
+        }
     }
 }
