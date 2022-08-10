@@ -20,5 +20,6 @@ namespace DataAccess.Concrete.EntityFramework.Context
         public DbSet<OperationClaim> OperationClaims { get; set; }
         public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
         public DbSet<Person> People { get; set; }
+        public DbSet<LocalCharge> LocalCharges { get; set; }
     }
 }

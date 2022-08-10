@@ -32,6 +32,9 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<PersonManager>().As<IPersonService>();
             builder.RegisterType<EfPersonDal>().As<IPersonDal>();
 
+            builder.RegisterType<LocalChargeManager>().As<ILocalChargeService>();
+            builder.RegisterType<EfLocalChargeDal>().As<ILocalChargeDal>();
+
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
 
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces().EnableInterfaceInterceptors(new ProxyGenerationOptions()

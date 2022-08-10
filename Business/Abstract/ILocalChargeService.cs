@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Business.Abstract
 {
-    internal interface ILocalChargeService
+    public interface ILocalChargeService
     {
         IDataResult<List<LocalCharge>> GetAll();
         IResult Add(LocalCharge localCharge);

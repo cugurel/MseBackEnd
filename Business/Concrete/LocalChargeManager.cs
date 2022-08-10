@@ -1,19 +1,24 @@
 ﻿using Business.Abstract;
+using Business.Constants;
 using Core.Utilities.Results.Abstract;
+using Core.Utilities.Results.Concrete;
+using DataAccess.Abstract;
 using Entity.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Business.Concrete
 {
     public class LocalChargeManager : ILocalChargeService
     {
+        private readonly ILocalChargeDal _localChargeDal;
+
+        public LocalChargeManager(ILocalChargeDal localChargeDal)
+        {
+            _localChargeDal = localChargeDal;
+        }
+
         public IResult Add(LocalCharge localCharge)
         {
-            throw new NotImplementedException();
+            _localChargeDal.Add(localCharge);
+            return new SuccessResult(Messages.addedLocalService);
         }
 
         public IResult Delete(LocalCharge localCharge)
@@ -23,7 +28,7 @@ namespace Business.Concrete
 
         public IDataResult<List<LocalCharge>> GetAll()
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<List<LocalCharge>>(_localChargeDal.GetAll());
         }
 
         public IDataResult<LocalCharge> GetById(int id)

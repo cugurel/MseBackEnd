@@ -26,5 +26,6 @@ namespace Business.Constants
         public static string addedPerson = "Kişi Eklendi";
         public static string updatedPerson = "Kişi güncellendi";
         public static string deletedPerson = "Kişi Silindi";
+        public static string addedLocalService = "Yerel Hizmet Eklendi";
     }
 }
